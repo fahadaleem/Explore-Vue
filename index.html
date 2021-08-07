@@ -23,6 +23,15 @@
 
       <!-- binding values to a input -->
       <input type="text" v-bind:value="name" />
+
+      <!-- events in vue -->
+      <h1>Events</h1>
+      <button v-on:click="age++">Add</button>
+      <button v-on:click="age--">Minise</button>
+      <h4>Age: {{age}}</h4>
+
+
+
     </div>
 
     <script src="./app.js"></script>
