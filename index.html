@@ -30,10 +30,29 @@
       <button v-on:click="age--">Minise</button>
       <button v-on:click="incrementAge(10)">Age Increment to 10</button>
       <button v-on:click="decrementAge(10)">Age Decrement to 10</button>
+      <p>Age: {{age}}</p>
+
+      <!-- two way data binding -->
+      <h1>Two way data binding</h1>
+      <input type="text" v-model="name" placeholder="enter some value">
+      <p>{{name}}</p>
+      <input type="text" v-model="age">
+      <p>{{age}}</p>
+
+      <!-- computed properties -->
+      <h1>Computed Properties</h1>
+      <button v-on:click="a++">Add to A</button>
+      <button v-on:click="b++">Add to B</button>
+      <p>A - {{ a }}</p>
+      <p>B - {{ b }}</p>
+
+      <p>Age +  {{ a }} => {{ addToA }}</p>
+      <p>Age +  {{ b }} => {{ addToB }}</p>
 
 
-      <h4>Age: {{age}}</h4>
-
+      <!-- dynamic classes -->
+      <h1>Dynamic Classes</h1>
+      <p v-bind:class="{available:available}">Heading</p>
 
 
     </div>
