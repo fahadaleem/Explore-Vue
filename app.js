@@ -3,6 +3,7 @@ new Vue({
     data:{
         name: 'Fahad Aleem',
         job: 'Software Engineer',
+        window:"https://www.facebook.com/"
     },
     methods:{
         greet:function(time){
